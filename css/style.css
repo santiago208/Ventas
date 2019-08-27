@@ -1,0 +1,23 @@
+body 
+{
+    background-color: #7AEAE0;
+    padding: 10px;
+    margin: 10px;
+    border: 4px  ridge #9C8282;
+}
+h1
+{
+    color: #337AFD;
+    font-size: 40px;
+    margin: 0px;
+    padding: 20px;
+    background-color: #252F53;
+}
+h1:hover
+{
+    color: #337AFD;
+    font-size: 40px;
+    margin: 0px;
+    padding: 20px;
+    background-color: #030409;
+}

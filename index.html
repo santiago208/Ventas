@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+​
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Ventas</title>
+    <script>
+        var ventas = [
+            { ciudad: 'Medellin :', valor: 100000 },
+            { ciudad: 'Bogota :', valor: 120000 },
+            { ciudad: 'Cali :', valor: 200000 },
+            { ciudad: 'Barranquilla :', valor: 10500 },
+            { ciudad: 'Pereira :', valor: 90000 }
+        ];
+    </script>
+</head>
+​
+
+<body>
+    <h1>Ventas en Ciudades</h1>
+
+    <script>
+
+        ventas.forEach(function (c, v) {
+            document.write('<p> ' + c.ciudad + '<em> ' + "  " + c.valor + '</em></p>');
+        });
+
+        let totalValue = 0;
+
+        ventas.forEach(function (c, v) {
+            totalValue = totalValue + c.valor;
+        });
+
+        document.write(`<p>El valor total es de: <em> ${totalValue} <em></p>`);
+
+    </script>
+
+
+</body>
+​
+
+</html>
